@@ -5,7 +5,6 @@
 #
 
 ORG_URL="https://github.com/prague-dev"
-MANIFEST_URL="git://github.com/LineageOS/android.git"
 BRANCH="16.0-recovery"
 
 rm -rf device/huawei/prague
