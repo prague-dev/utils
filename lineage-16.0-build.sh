@@ -9,7 +9,7 @@ MANIFEST_URL="git://github.com/LineageOS/android.git"
 BRANCH="lineage-16.0"
 
 repo init -u $MANIFEST_URL -b $BRANCH
-repo sync --force-sync --no-tag --no-clone-bundle --optimized-fetch --current-branch -f -j16
+repo sync --force-sync -c -q --no-tag --no-clone-bundle --optimized-fetch --current-branch -f -j16 || exit 0
 
 git clone $ORG_URL/android_device_huawei_prague -b $BRANCH device/huawei/prague
 git clone $ORG_URL/android_device_huawei_hi6250-common -b $BRANCH device/huawei/hi6250-common
